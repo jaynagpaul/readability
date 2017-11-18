@@ -116,7 +116,7 @@ Readability.prototype.getTextBody = function(notDeprecated) {
       var el = textElements[i];
       var text = helpers.getInnerText(el);
       if (!text) continue;
-      textBody += text;
+      textBody += text + ' ';
       if ((i + 1) < textElements.length) textBody += '\n';
     }
   }
